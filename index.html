@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Task 1</title>
+    <style>
+        body {
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            background-color: rgb(243, 173, 93);
+            align-items: center;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            height: 320px;
+            background-color: rgb(128, 156, 138);
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .main__pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main__pic img {
+            height: 300px;
+        }
+        .main__text {
+            width: 95%;
+            height: 300px;
+        }
+        .nav .logo {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .nav .links {
+            margin-right: 10px;
+        }
+        .link {
+            text-decoration: none;
+            color: rgb(88, 71, 52);
+            margin-left: 10px;
+        }
+        #first{
+            font-weight: bold;
+        }
+        .prod__list {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap:10px;
+        }
+        .prod img {
+            width: 100%;
+            height: 100%;
+        }
+        .title {
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+        .buy {
+            text-decoration: none;
+        }
+        .button {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 100px;
+            background-color:rgb(243, 173, 93);
+            border: 1px solid rgb(88, 71, 52);
+            box-sizing: border-box;
+        }
+        .buy__link {
+            color:#303030;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <span class="logo">
+            <span id="first">
+                ART
+            </span>
+            <span id="second">
+                SHOP
+            </span>
+        </span>
+        <div class="links">
+            <a href="#" class="link">About</a>
+            <a href="" class="link">Biography</a>
+            <a href="" class="link">Storyes</a>
+            <a href="" class="link">Arts</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__pic">
+            <img src="https://cdn.britannica.com/33/130833-050-462F8F09/Wheatfield-Crows-oil-canvas-Vincent-van-Gogh-1890.jpg">
+        </div>
+        <div class="main__text">
+            <h1>
+                Vincent van Gogh: Wheatfield with Crows
+            </h1>
+            <p class="main__par">
+                Wheatfield with Crows, oil on canvas by Vincent van Gogh, 1890; in the Van Gogh Museum, Amsterdam.
+                <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Vitae deserunt facilis accusamus qui vero saepe illo, nulla cumque, ratione sed aut aspernatur, 
+                praesentium sapiente id! Quia cupiditate, veritatis beatae libero est illo, suscipit, alias magni 
+                blanditiis delectus omnis eligendi praesentium.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit illo beatae rem accusantium tempora!
+            </p>
+        </div>
+
+    </div>
+    <div class="prod">
+        <div class="title">
+            <h2 class="title">Our Products</h2>
+        </div>
+        <div class="prod__list">
+            <div class="photos">
+                <a href="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" class="photoLink">
+                    <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" alt="skyMoon">
+                </a>
+                <h3>Starry Night</h3>
+                <p class="prod__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum beatae, a doloremque enim voluptas id.
+                </p>
+                <a class="buy" href="#">
+                    <div class="button">
+                        <span class="buy__link">
+                            Read more
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="photos">
+                <a href="https://cdn.britannica.com/41/181941-050-DBEBA6D5/Old-Tower-canvas-oil-cardboard-Fields-Vincent-1884.jpg" class="photoLink">
+                    <img src="https://cdn.britannica.com/41/181941-050-DBEBA6D5/Old-Tower-canvas-oil-cardboard-Fields-Vincent-1884.jpg" alt="skyMoon">
+                </a>
+                <h3>Old Tower</h3>
+                <p class="prod__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nesciunt vitae? Debitis magnam corrupti sequi?
+                </p>
+                <a class="buy" href="#">
+                    <div class="button">
+                        <span class="buy__link">
+                            Read more
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="photos">
+                <a href="https://cdn.britannica.com/92/215592-050-8DEB0E28/Large-Plane-Trees-Road-Menders-at-Saint-Remy-Vincent-Van-Gough-1889-Cleveland-Art-Museum.jpg" class="photoLink">
+                    <img src="https://cdn.britannica.com/92/215592-050-8DEB0E28/Large-Plane-Trees-Road-Menders-at-Saint-Remy-Vincent-Van-Gough-1889-Cleveland-Art-Museum.jpg" alt="skyMoon">
+                </a>
+                <h3>Large Plane Trees Road</h3>
+                <p class="prod__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt veritatis saepe eligendi illo. Maiores, laudantium provident.
+                </p>
+                <a class="buy" href="#">
+                    <div class="button">
+                        <span class="buy__link">
+                            Read more
+                        </span>
+                    </div>
+                </a>
+        </div>
+        <div class="photos">
+            <a href="https://cdn.britannica.com/70/970-004-3DCDD429/Wheatfield-oil-canvas-Cypresses-Vincent-van-Gogh-1889.jpg?s=1500x700&q=85" class="photoLink">
+                <img src="https://cdn.britannica.com/70/970-004-3DCDD429/Wheatfield-oil-canvas-Cypresses-Vincent-van-Gogh-1889.jpg?s=1500x700&q=85" alt="skyMoon">
+            </a>
+            <h3>Wheatfield</h3>
+            <p class="prod__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi dolor reprehenderit? Eveniet libero quod fugit sapiente?
+            </p>
+            <a class="buy" href="#">
+                <div class="button">
+                    <span class="buy__link">
+                        Read more
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
